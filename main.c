@@ -11,7 +11,7 @@ struct file
 int main()
 {
 	setlocale(LC_ALL,"");
-	FILE* list=fopen("C:/Users/Денис/Desktop/list.txt","r");
+	FILE* list=fopen("sem1/list.txt","r");
 	int n=1;
 	struct file* list1=(struct file*)malloc(n*sizeof(struct file));
 	while(fscanf(list,"%s%s%s",list1[n-1].name,list1[n-1].gender,list1[n-1].bday)!=EOF)
